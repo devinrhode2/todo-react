@@ -67,7 +67,7 @@ export default function Todo(props) {
 
   const viewTemplate = (
     <div className="stack-small">
-      <div className="c-cb">
+      <div className="c-cb" style={props.completed ? {border: '3px solid red'} : undefined}>
           <input
             id={props.id}
             type="checkbox"
